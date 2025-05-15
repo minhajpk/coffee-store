@@ -10,17 +10,20 @@ import Home from './component/Home.jsx';
 import Roots from './pages/Roots.jsx';
 import AddCoffee from './component/AddCoffee.jsx';
 import UpdataCoffee from './component/UpdataCoffee.jsx';
+import ErrorPage from './component/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: Roots,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
 
       {
 
         path: "/",
-        Component: Home
+        Component: Home,
+        
       },
       {
         path: "/add-coffee",

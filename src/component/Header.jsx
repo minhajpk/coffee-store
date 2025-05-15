@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/more/logo1.png'
 import BG from '../assets/more/15.jpg'
+import { Link } from 'react-router';
 
 const Header = () => {
 
@@ -27,8 +28,8 @@ const Header = () => {
                 </div>
 
 
-                <img src={Logo} className='w-14' alt="Logo" />
-                <a className=" text-3xl text-white font-medium text-shadow-lg">Espresso Emporium</a>
+                <Link to="/"><img src={Logo} className='w-14' alt="Logo" /></Link>
+                <Link to="/" className=" text-3xl text-white font-medium text-shadow-lg">Espresso Emporium</Link>
                 
             </div>
 

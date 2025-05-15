@@ -8,6 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { TfiEmail } from "react-icons/tfi";
 import { ImLocation2 } from "react-icons/im";
+import { Link } from 'react-router';
 
 
 const Footer = () => {
@@ -19,8 +20,10 @@ const Footer = () => {
 
             <footer style={style} className="footer lg:flex justify-evenly items-center  text-base-content max-w-8xl mx-auto p-10">
                 <div className=' sm:pl-24 '>
+                    <Link to="/">
                     <img src={Logo} className='w-20' alt="" />
                     <h2 className='text-4xl text-shadow-lg text-[#331A15]'>Espresso Emporium</h2>
+                    </Link>
                     <p className='text-[#331A15]'>Always ready to be your friend. Come & Contact with us to share your memorable moments,<br /> to share with your best companion.</p>
                     <div className='flex gap-5 mt-2'>
                         <FaFacebook size={28} className='text-[#331A15]' />

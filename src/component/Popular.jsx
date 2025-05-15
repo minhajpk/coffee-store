@@ -8,7 +8,7 @@ const Popular = () => {
             <h1 className='text-center text-5xl font-bold text-[#331A15] text-shadow-lg'>Our Popular Products </h1>
            <div className='flex justify-center items-center mt-5'>
             <Link to="/add-coffee">
-            <button className='btn bg-[#D2B48C] border-[#331A15] '> <BsCupHot /> Add New Coffee</button>
+            <button className='btn bg-[#E3B577] shadow '> <BsCupHot /> Add New Coffee</button>
            </Link>
            </div>
         </div>
@@ -16,3 +16,4 @@ const Popular = () => {
 };
 
 export default Popular;
+
